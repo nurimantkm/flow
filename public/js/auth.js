@@ -28,7 +28,7 @@ function setupLoginForm() {
         const password = document.getElementById('password').value;
         
         try {
-            const data = await apiRequest('/auth/login', 'POST', { email, password });
+            const data = await apiRequest('/auth', 'POST', { email, password });
             
             // Save token to localStorage
             localStorage.setItem('token', data.token);
@@ -65,7 +65,7 @@ function setupRegisterForm() {
         }
         
         try {
-            const data = await apiRequest('/auth/register', 'POST', { name, email, password });
+            const data = await apiRequest('/users', 'POST', { name, email, password });
             
             // Save token to localStorage
             localStorage.setItem('token', data.token);
