@@ -2,7 +2,7 @@
 const API_URL = 'https://flow-cu04.onrender.com/api';
 
 // Function to show alerts
-function showAlert(message, type = 'danger') {
+function showAlert(message, type = 'danger')  {
     const alertContainer = document.getElementById('alert-container');
     const alertDiv = document.createElement('div');
     alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
