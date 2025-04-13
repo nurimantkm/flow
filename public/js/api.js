@@ -1,5 +1,5 @@
 // API utility functions
-const API_URL = 'https://entalk-flow.onrender.com/api';
+const API_URL = 'https://flow-cu04.onrender.com/api';
 
 // Function to show alerts
 function showAlert(message, type = 'danger') {
