@@ -1,0 +1,10 @@
+# Render Build and Start Configuration
+web:
+  build:
+    - npm install
+  start: node server.js
+  env:
+    - key: NODE_ENV
+      value: production
+    - key: PORT
+      value: 10000
